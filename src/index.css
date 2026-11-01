@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #1d0508;
+  color: #f1dca6;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Linen-like vertical texture on the wine background */
+.wine-bg {
+  background-color: #3a0910;
+  background-image:
+    radial-gradient(ellipse at 50% 35%, rgba(122, 20, 36, 0.55), transparent 65%),
+    radial-gradient(ellipse at 50% 120%, rgba(0, 0, 0, 0.55), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px);
+}
+
+.gold-text {
+  color: #e6c277;
+  text-shadow: 0 0 18px rgba(230, 194, 119, 0.18);
+}
+
+.paper-card {
+  background: linear-gradient(180deg, #fbf3df 0%, #efdcb6 100%);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
