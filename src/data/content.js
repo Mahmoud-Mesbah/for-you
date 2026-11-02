@@ -10,7 +10,7 @@ export const RELATIONSHIP_START_LABEL = 'since 21 July 2025'
 // While `src` is empty, a soft built-in melody plays instead so the player still works.
 export const track = {
   title: 'habeeby da',
-  src: '../../public/Albumaty.Com_tww_lyt_hbyby_dh_.mp3',
+  src: '/Albumaty.Com_tww_lyt_hbyby_dh_.mp3',
 }
 
 export const envelopeContent = {
